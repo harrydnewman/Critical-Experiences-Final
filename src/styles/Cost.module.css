@@ -1,0 +1,27 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    background-color: green;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderDiv {
+    width: 80%;
+    height: 30vh;
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customTrackGradient .MuiSlider-track {
+    background: linear-gradient(to right, #00e676, #ffeb3b, #f44336);
+    border: none;
+  }
+  
+  .customTrackGradient .MuiSlider-rail {
+    opacity: 0.3;
+    background-color: #ccc;
+  }

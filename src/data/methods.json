@@ -32,7 +32,7 @@
     "environmental_impact": "Moderate",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Accepted with Stipulations"],
       "Judaism": ["Not Accepted"],
       "Buddhism": ["Common or Accepted"],
@@ -56,7 +56,7 @@
     "environmental_impact": "Very Low",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Accepted with Stipulations"],
       "Judaism": ["Accepted"],
       "Buddhism": ["Common or Accepted"],
@@ -80,7 +80,7 @@
     "environmental_impact": "Low",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Not Accepted"],
       "Judaism": ["Not Accepted"],
       "Buddhism": ["Common or Accepted"],
@@ -105,7 +105,7 @@
     "environmental_impact": "Very Low",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Not Accepted"],
       "Judaism": ["Not Accepted"],
       "Buddhism": ["Common or Accepted"],
@@ -130,7 +130,7 @@
     "environmental_impact": "High",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Rare or Uncommon"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Not Accepted"],
       "Judaism": ["Not Accepted"],
       "Buddhism": ["Rare or Uncommon"],
@@ -155,7 +155,7 @@
     "environmental_impact": "Very Low",
     "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Accepted with Stipulations"],
       "Judaism": ["Accepted with Stipulations"],
       "Buddhism": ["Common or Accepted"],
@@ -180,7 +180,7 @@
       "environmental_impact": "Low",
       "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+     "Christianity": ["Accepted"],
       "Catholicism": ["Accepted with Stipulations"],
       "Judaism": ["Accepted with Stipulations"],
       "Buddhism": ["Rare or Uncommon"],
@@ -205,7 +205,7 @@
       "environmental_impact": "Moderate",
       "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Accepted with Stipulations"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Accepted with Stipulations"],
       "Judaism": ["Accepted with Stipulations"],
       "Buddhism": ["Common or Accepted"],
@@ -226,11 +226,11 @@
       "name": "Forensic Body Farm Donation",
       "description": "Donation of the body to forensic anthropology research facilities for decomposition studies aiding forensic science.",
       "cost_category": "Low",
-      "cost_range": "Free (facilities often cover transport within their region)",
+      "cost_range": "$0-$0",
       "environmental_impact": "Very Low",
       "religious_compatibility": {
       "Secular": ["Accepted"],
-      "Christianity": ["Rare or Uncommon"],
+      "Christianity": ["Accepted"],
       "Catholicism": ["Not Accepted"],
       "Judaism": ["Not Accepted"],
       "Buddhism": ["Rare or Uncommon"],
@@ -255,7 +255,7 @@
       "environmental_impact": "High",
       "religious_compatibility": {
         "Secular": ["Accepted"],
-        "Christianity": ["Rare or Uncommon"],
+       "Christianity": ["Accepted"],
         "Catholicism": ["Not Accepted"],
         "Judaism": ["Not Accepted"],
         "Buddhism": ["Rare or Uncommon"],
@@ -280,7 +280,7 @@
       "environmental_impact": "Moderate",
       "religious_compatibility": {
         "Secular": ["Accepted"],
-        "Christianity": ["Accepted with Stipulations"],
+        "Christianity": ["Accepted"],
         "Catholicism": ["Not Accepted"],
         "Judaism": ["Not Accepted"],
         "Buddhism": ["Rare or Uncommon"],
@@ -305,7 +305,7 @@
       "environmental_impact": "Moderate",
       "religious_compatibility": {
         "Secular": ["Accepted"],
-        "Christianity": ["Accepted with Stipulations"],
+        "Christianity": ["Accepted"],
         "Catholicism": ["Not Accepted"],
         "Judaism": ["Not Accepted"],
         "Buddhism": ["Rare or Uncommon"],
@@ -330,7 +330,7 @@
       "environmental_impact": "Moderate",
       "religious_compatibility": {
         "Secular": ["Accepted"],
-        "Christianity": ["Accepted with Stipulations"],
+        "Christianity": ["Accepted"],
         "Catholicism": ["Not Accepted"],
         "Judaism": ["Not Accepted"],
         "Buddhism": ["Rare or Uncommon"],
@@ -351,11 +351,11 @@
       "name": "Plastination (Body Donation for Display)",
       "description": "Body preservation by replacing water and fat with plastic polymers for education or display.",
       "cost_category": "Low",
-      "cost_range": "Free (via donation)",
+      "cost_range": "$0-$0",
       "environmental_impact": "Moderate",
       "religious_compatibility": {
         "Secular": ["Accepted"],
-        "Christianity": ["Rare or Uncommon"],
+        "Christianity": ["Accepted"],
         "Catholicism": ["Not Accepted"],
         "Judaism": ["Not Accepted"],
         "Buddhism": ["Rare or Uncommon"],
