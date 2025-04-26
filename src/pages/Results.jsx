@@ -5,7 +5,8 @@ import methods from '../data/methods.json';
 import styles from '../styles/Results.module.css';
 import EnvironmentalImpact from '../components/EnvironmentalImpact';
 import useFilteredMethodsByEnvironmentalImpact from '../hooks/useFilteredMethodsByEnvironmentalImpact';
-import Religion from '../components/Religion';
+// import Religion from '../components/Religion';
+import Disposition from '../components/Disposition';
 
 export default function Results() {
   const [low, setLow] = useState(0);
@@ -31,14 +32,18 @@ export default function Results() {
     // setEnvironmentalSelection(selection); // No need to clean here anymore
     console.log(selection)
   };
+
+  const handleDispositionChange = (selection) => {
+    console.log(selection)
+  }
   
 
 //   const filtered = useFilteredMethodsByCost(methods, low, high);
 
   return (
     <div className={styles.main}>
-    <Religion onReligionChange={handleReligionChange}/>
-   
+    {/* <Religion onReligionChange={handleReligionChange}/> */}
+    <Disposition onDispositionChange={handleDispositionChange}/>
     {/* <Cost onCostChange={handleCostChange} />
     <EnvironmentalImpact onEnvironmentalImpactChange={handleEnvironmentalImpactChange} />
     
