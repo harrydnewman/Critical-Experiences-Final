@@ -5,15 +5,20 @@ import methods from '../data/methods.json';
 import styles from '../styles/Results.module.css';
 import EnvironmentalImpact from '../components/EnvironmentalImpact';
 import useFilteredMethodsByEnvironmentalImpact from '../hooks/useFilteredMethodsByEnvironmentalImpact';
-// import Religion from '../components/Religion';
 import Disposition from '../components/Disposition';
+import ViewingSuitability from '../components/ViewingSuitability';
+import useFilteredMethodsByViewingSuitability from '../hooks/useFilteredMethodsByViewingSuitability';
+
 
 export default function Results() {
   const [low, setLow] = useState(0);
   const [high, setHigh] = useState(Infinity);
   const [EnvironmentalSelection, setEnvironmentalSelection] = useState(null)
+  const [viewingSuitabilitySelection, setViewingSuitabilitySelection] = useState(null);
   const costFiltered = useFilteredMethodsByCost(methods, low, high);
-  const finalFiltered = useFilteredMethodsByEnvironmentalImpact(costFiltered, EnvironmentalSelection);
+  const envFiltered = useFilteredMethodsByEnvironmentalImpact(costFiltered, EnvironmentalSelection);
+  const finalFiltered = useFilteredMethodsByViewingSuitability(envFiltered, viewingSuitabilitySelection);
+  
   
 
 
@@ -28,24 +33,22 @@ export default function Results() {
     setEnvironmentalSelection(selection); // No need to clean here anymore
   };
 
-  const handleReligionChange = (selection) => {
-    // setEnvironmentalSelection(selection); // No need to clean here anymore
-    console.log(selection)
-  };
-
   const handleDispositionChange = (selection) => {
     console.log(selection)
   }
-  
 
-//   const filtered = useFilteredMethodsByCost(methods, low, high);
+  const handleViewingSuitabilityChange = (selection) => {
+    setViewingSuitabilitySelection(selection);
+  };
+  
 
   return (
     <div className={styles.main}>
-    {/* <Religion onReligionChange={handleReligionChange}/> */}
-    <Disposition onDispositionChange={handleDispositionChange}/>
-    {/* <Cost onCostChange={handleCostChange} />
+ {/* <Disposition onDispositionChange={handleDispositionChange}/>  */}
+   
+     <Cost onCostChange={handleCostChange} />
     <EnvironmentalImpact onEnvironmentalImpactChange={handleEnvironmentalImpactChange} />
+    <ViewingSuitability onViewingSuitabilityChange={handleViewingSuitabilityChange}/> 
     
   
     <ul>
@@ -54,7 +57,7 @@ export default function Results() {
           {method.name} — {method.cost_range} — {method.environmental_impact}
         </li>
       ))}
-    </ul> */}
+    </ul> 
   </div>
   
 
