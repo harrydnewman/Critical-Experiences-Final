@@ -1,0 +1,11 @@
+services:
+  frontend:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: death_site
+    image: harrydnewman/ce-final:latest
+    ports:
+      - "4781:80"
+    restart: unless-stopped
