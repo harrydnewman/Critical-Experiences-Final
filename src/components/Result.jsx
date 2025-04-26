@@ -1,33 +1,7 @@
 import styles from '../styles/Result.module.css'
 
 export default function Result({ selection }) {
-    const dummySelection = [
-        {
-            "id": "0",
-            "name": "Traditional Embalming and Burial",
-            "description": "Embalming the body with chemicals, placing it in a casket, and burying in a cemetery with vault.",
-            "cost_category": "High",
-            "cost_range": "$8,000-$12,000+",
-            "environmental_impact": "High",
-            "religious_compatibility": {
-                "Secular": ["Accepted"],
-                "Christianity": ["Accepted"],
-                "Catholicism": ["Accepted"],
-                "Judaism": ["Accepted with Stipulations"],
-                "Buddhism": ["Rare or Uncommon"],
-                "Hinduism": ["Generally Not Practiced"],
-                "Islam": ["Accepted with Stipulations"]
-            },
-            "religious_compatibility_notes": "Traditional Christian burials strongly favor this method. Judaism and Islam require burial but traditionally forbid embalming; secular preferences vary.",
-            "availability": "Legal and available in all U.S. states.",
-            "time_to_disposition": "Slow (10-15+ years to decompose fully).",
-            "viewing_suitability": "Good",
-            "notes": "Ideal for traditional open-casket funerals. Cemetery space required. Long-term land use.",
-            "recommended_for": "Those wanting a traditional ceremony with open-casket viewing and strong family/cultural customs.",
-            "legal_status": "Legal nationwide"
-        },
-    ]
-    const topSelection = dummySelection[0];
+    const topSelection = selection[0];
     return (
         <div className={styles.main}>
             <div className={styles.header}>

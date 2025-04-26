@@ -20,12 +20,8 @@ export default function Selections() {
   const envFiltered = useFilteredMethodsByEnvironmentalImpact(costFiltered, EnvironmentalSelection);
   const dispositionFiltered = useFilteredMethodsByDisposition(envFiltered, dispositionSelection);
   const finalFiltered = useFilteredMethodsByViewingSuitability(dispositionFiltered, viewingSuitabilitySelection);
-  const [showCost, setShowCost] = useState(true)
-  const [showEnvironmental, setShowEnvironmental] = useState(false)
-  const [showDisposition, setShowDisposition] = useState(false)
-  const [showViewing, setShowViewing] = useState(false)
-  const [stage, setStage] = useState('cost'); 
-const [transitioning, setTransitioning] = useState(false);
+  const [stage, setStage] = useState('cost');
+  const [transitioning, setTransitioning] = useState(false);
 
 
   const handleCostChange = ({ low, high }) => {
@@ -41,7 +37,7 @@ const [transitioning, setTransitioning] = useState(false);
       setStage('environmental'); // Move to next stage
     }, 500); // 500ms or however long you want the sweep to last
   };
-  
+
 
   const handleEnvironmentalImpactChange = (selection) => {
     setEnvironmentalSelection(selection); // No need to clean here anymore
@@ -65,16 +61,22 @@ const [transitioning, setTransitioning] = useState(false);
   const handleViewingSuitabilityChange = (selection) => {
     setViewingSuitabilitySelection(selection);
     console.log(finalFiltered)
+    setTransitioning(true); // Start sweep animation
+    setTimeout(() => {
+      setTransitioning(false); // End sweep after transition
+      setStage('result'); // Move to next stage
+    }, 500);
   };
 
 
   return (
     <div className={`${styles.main} ${transitioning ? styles.transitioning : ''}`}>
-  {/* {stage === 'cost' && <Cost onCostChange={handleCostChange} onCostSelected={handleCostSelected} />}
-  {stage === 'environmental' && <EnvironmentalImpact onEnvironmentalImpactChange={handleEnvironmentalImpactChange} />}
-  {stage === 'disposition' && <Disposition onDispositionChange={handleDispositionChange} />}
-  {stage === 'viewing' && <ViewingSuitability onViewingSuitabilityChange={handleViewingSuitabilityChange} />} */}
-  <Result/>
-</div>
+      {stage === 'cost' && <Cost onCostChange={handleCostChange} onCostSelected={handleCostSelected} />}
+      {stage === 'environmental' && <EnvironmentalImpact onEnvironmentalImpactChange={handleEnvironmentalImpactChange} />}
+      {stage === 'disposition' && <Disposition onDispositionChange={handleDispositionChange} />}
+      {stage === 'viewing' && <ViewingSuitability onViewingSuitabilityChange={handleViewingSuitabilityChange} />}
+      {stage === 'result' && <Result selection={finalFiltered} />}
+
+    </div>
   );
 }
