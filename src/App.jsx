@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Home from './pages/Home'
-import Results from './pages/Results';
+import Selections from './pages/Selections';
 
 export default function App() {
   return (
@@ -9,7 +9,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/results" element={<Results />} />
+          <Route path="/selections" element={<Selections />} />
         </Routes>
       </Router>
     </div>

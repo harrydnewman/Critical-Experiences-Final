@@ -1,0 +1,12 @@
+
+
+.main {
+    background-color: #d0d0d0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .transitioning {
+    transform: translateX(-100%); /* Sweep left */
+    opacity: 0;
+  }
+  

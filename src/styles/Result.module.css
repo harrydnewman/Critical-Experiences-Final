@@ -1,0 +1,94 @@
+.main {
+    width: 100%;
+    padding: 2%;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.title {
+    margin-bottom: 1%;
+}
+.title h1 {
+    font-size: 50px;
+
+}
+
+.title h4 {
+    font-size: 30px;
+}
+
+.cost h1 {
+    font-size: 45px;
+}
+
+.cost h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.environmentalImpact h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.environmentalImpact h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.availability h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.availability h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.disposition h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.disposition h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.viewing h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.viewing h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.notes h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.notes h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+margin-top: 5px;
+}
+
+.recommended h1 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.recommended h3 {
+    font-size: 30px;
+margin-bottom: 10px;
+}

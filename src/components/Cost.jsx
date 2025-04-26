@@ -80,9 +80,9 @@ const marks = [
 
 
 
-export default function Cost({ onCostChange }) {
+export default function Cost({ onCostChange, onCostSelected }) {
     const [value, setValue] = useState([
-        scaleFromDollar(30000), // example low
+        scaleFromDollar(1000), // example low
         scaleFromDollar(60000), // example high
       ]);
     const [lowCost, setLowCost] = useState(0)
@@ -119,7 +119,10 @@ export default function Cost({ onCostChange }) {
     };
     return (
         <div className={styles.main}>
-            <h1>Cost</h1>
+                   <div className={styles.titleDiv}>
+                   <h1>Cost</h1>
+                   <h3>What is your preferred budget range for this process?</h3>
+                   </div>
             <div className={styles.sliderDiv}>
                 <GradientSlider
                     getAriaLabel={() => 'Cost Range'}
@@ -133,6 +136,10 @@ export default function Cost({ onCostChange }) {
                 />
 
             </div>
+
+             <div className={styles.buttonsDiv}>
+                        <button className={styles.button} onClick={() => onCostSelected()}> <span>Continue</span></button>
+                    </div>
         </div>
     )
 }
